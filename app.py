@@ -73,6 +73,8 @@ if selected == "EGFR":
     data = pd.read_csv(data_link)
     st.write("Data Preview:")
     st.dataframe(data.head())
+    col = data.columns
+    st.write(col)
 
         # Data preprocessing
     data.replace([np.inf, -np.inf], np.nan, inplace=True)
@@ -140,6 +142,8 @@ if selected == "EGFR":
         MoleculeDescriptors_list, desc_names = RDKit_descriptors(sample['SMILES'])
         df_ligands_descriptors = pd.DataFrame(MoleculeDescriptors_list, columns=desc_names)
         st.dataframe(df_ligands_descriptors.head())
+        col2 = df_ligands_descriptors.columns
+        st.write(col2)
 
     # Combine descriptors
 
