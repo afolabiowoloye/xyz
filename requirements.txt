@@ -1,5 +1,5 @@
 rdkit
-streamlit==0.71.0
+streamlit
 streamlit-option-menu
 pandas
 seaborn
