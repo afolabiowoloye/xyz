@@ -45,7 +45,6 @@ st.set_page_config(page_title = page_title, page_icon = page_icon, layout = layo
 image = 'logo/logo.jpg'
 st.image(image, use_column_width=True)
 
-#https://github.com/afolabiowoloye/fff/blob/main/logo.jpg
 
 # -
 
@@ -143,14 +142,11 @@ if selected == "EGFR":
 
         MoleculeDescriptors_list, desc_names = RDKit_descriptors(sample['SMILES'])
         df_ligands_descriptors = pd.DataFrame(MoleculeDescriptors_list, columns=desc_names)
-        st.dataframe(df_ligands_descriptors.head())
+        #st.dataframe(df_ligands_descriptors.head())
         
         df_ligands_descriptors = df_ligands_descriptors.drop(["SPS", "AvgIpc"], axis=1)
         #col2 = df_ligands_descriptors.columns
         #st.write(col2)
-
-    # Combine descriptors
-
 
     # Predictions
         sample['predicted_pIC50'] = model.predict(df_ligands_descriptors)
