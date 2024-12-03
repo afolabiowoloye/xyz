@@ -68,7 +68,7 @@ if selected == "Home":
 #st.dataframe(df.head())
 if selected == "EGFR":
 # Link to the dataset on Google Drive
-    data_link_id = "1RHO0y_dREHu7mk0IF0LlF4HRhc7Xal3E"
+    data_link_id = "1C-cFzESEfJcEdWGDLLdVawQbgZvbU_rQ"
     data_link = f'https://drive.google.com/uc?id={data_link_id}'
     data = pd.read_csv(data_link)
     st.write("Data Preview:")
@@ -124,24 +124,6 @@ if selected == "EGFR":
         st.write("Sample Data Preview:")
         st.dataframe(sample.head())
 
-    # Lipinski descriptors function
-        def lipinski(SMILES):
-            moldata = []
-            for elem in SMILES:
-                if isinstance(elem, str):
-                    mol = Chem.MolFromSmiles(elem)
-                    moldata.append(mol)
-            baseData = []
-            for mol in moldata:
-                desc_MolWt = Descriptors.MolWt(mol)
-                desc_MolLogP = Descriptors.MolLogP(mol)
-                desc_NumHDonors = Lipinski.NumHDonors(mol)
-                desc_NumHAcceptors = Lipinski.NumHAcceptors(mol)
-                baseData.append([desc_MolWt, desc_MolLogP, desc_NumHDonors, desc_NumHAcceptors])
-            columnNames = ["MW1", "LogP1", "NumHDonors1", "NumHAcceptors1"]
-            return pd.DataFrame(data=baseData, columns=columnNames)
-
-        df_ligands_lipinski = lipinski(sample['SMILES'])
 
     # Getting RDKit descriptors
         def RDKit_descriptors(SMILES):
@@ -159,11 +141,10 @@ if selected == "EGFR":
         df_ligands_descriptors = pd.DataFrame(MoleculeDescriptors_list, columns=desc_names)
 
     # Combine descriptors
-        fp_ligands = pd.concat([df_ligands_descriptors, df_ligands_lipinski], axis=1)
 
 
     # Predictions
-        sample['predicted_pIC50'] = model.predict(fp_ligands)
+        sample['predicted_pIC50'] = model.predict(df_ligands_descriptors)
         st.write("Predicted pIC50 Values:")
         st.dataframe(sample[['SMILES', 'predicted_pIC50']])
         download_result = pd.DataFrame(sample)
