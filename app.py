@@ -121,7 +121,7 @@ if selected == "EGFR":
 
 # File uploader for SMILES data
     smiles_file = st.file_uploader("Upload your sample.csv", type="csv")
-    st.sidebar.markdown("""[Example input file](https://raw.githubusercontent.com/dataprofessor/bioactivity-prediction-app/main/example_acetylcholinesterase.txt)
+    st.sidebar.markdown("""[Example input file](https://raw.githubusercontent.com/afolabiowoloye/xyz/refs/heads/main/sample.csv)
 """)
     if smiles_file is not None:
         sample = pd.read_csv(smiles_file)
