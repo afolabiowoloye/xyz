@@ -143,7 +143,7 @@ if selected == "EGFR":
         df_ligands_descriptors = pd.DataFrame(MoleculeDescriptors_list, columns=desc_names)
         st.dataframe(df_ligands_descriptors.head())
         
-        df_ligands_descriptors = df_ligands_descriptors.drop("SPS", "AvgIpc", axis=1)
+        df_ligands_descriptors = df_ligands_descriptors.drop(["SPS", "AvgIpc"], axis=1)
         #col2 = df_ligands_descriptors.columns
         #st.write(col2)
 
