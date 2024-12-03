@@ -51,8 +51,8 @@ st.image(image, use_column_width=True)
 
 selected = option_menu(
     menu_title = page_title + " " + page_icon,
-    options = ['Home', 'EGFR', 'ER','Prog', 'About'],
-    icons = ["house-fill", "capsule", "heart-fill", "heart", "envelope-fill"],
+    options = ['Home', 'EGFR', 'ER','Prog', 'aromatase', 'About'],
+    icons = ["house-fill", "capsule", "heart-fill", "heart", "capsule", "envelope-fill"],
     default_index = 0,
     orientation = "horizontal"
 )
