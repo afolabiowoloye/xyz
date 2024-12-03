@@ -139,17 +139,18 @@ if selected == "EGFR":
 
         MoleculeDescriptors_list, desc_names = RDKit_descriptors(sample['SMILES'])
         df_ligands_descriptors = pd.DataFrame(MoleculeDescriptors_list, columns=desc_names)
+        st.dataframe(df_ligands_descriptors.head())
 
     # Combine descriptors
 
 
     # Predictions
-        sample['predicted_pIC50'] = model.predict(df_ligands_descriptors)
-        st.write("Predicted pIC50 Values:")
-        st.dataframe(sample[['SMILES', 'predicted_pIC50']])
-        download_result = pd.DataFrame(sample)
-        download_result = download_result.to_csv(index=False)
-        st.download_button("Press to Download Result",download_result,"file.csv","text/csv",key='download-csv')
+#        sample['predicted_pIC50'] = model.predict(df_ligands_descriptors)
+#        st.write("Predicted pIC50 Values:")
+#        st.dataframe(sample[['SMILES', 'predicted_pIC50']])
+#        download_result = pd.DataFrame(sample)
+#        download_result = download_result.to_csv(index=False)
+#        st.download_button("Press to Download Result",download_result,"file.csv","text/csv",key='download-csv')
 
 # -
 
