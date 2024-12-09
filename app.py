@@ -18,8 +18,9 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import ExtraTreesRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler, Normalizer
+from sklearn.preprocessing import StandardScaler, Normalizer, MaxAbsScaler
 from rdkit import Chem
 from rdkit.Chem import Descriptors, Lipinski
 from rdkit.ML.Descriptors import MoleculeDescriptors
@@ -86,12 +87,13 @@ if selected == "EGFR":
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=8)
 
     # Scaling
-    scaler = StandardScaler()
+    scaler = MaxAbsScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     
     # Model training
-    model = RandomForestRegressor(n_estimators=100, random_state=42)
+    model = ExtraTreesRegressor(n_estimators=1200, max_features='sqrt', min_samples_leaf=1,
+                          min_samples_split=5, max_depth=30, random_state=42)
     model.fit(X_train_scaled, y_train)
 
     # Predictions
