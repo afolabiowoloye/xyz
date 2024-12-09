@@ -152,7 +152,8 @@ if selected == "EGFR":
         #st.write(col2)
 
     # Predictions
-        sample['predicted_pIC50'] = model.predict(df_ligands_descriptors)
+        df_ligands_descriptors_scaled = scaler.transform(df_ligands_descriptors)
+        sample['predicted_pIC50'] = model.predict(df_ligands_descriptors_scaled)
         st.write("Predicted pIC50 Values:")
         st.dataframe(sample[['SMILES', 'predicted_pIC50']])
         download_result = pd.DataFrame(sample)
