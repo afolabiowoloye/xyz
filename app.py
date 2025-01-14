@@ -56,7 +56,7 @@ selected = option_menu(
     icons = ["house-fill", "capsule", "heart-fill", "heart", "capsule", "envelope-fill", "capsule", "capsule", "capsule", "capsule", "capsule", "envelope-fill",
              "capsule", "capsule", "capsule", "capsule", "capsule", "envelope-fill", "capsule", "capsule", "capsule", "capsule", "capsule", "capsule"],
     default_index = 0,
-    orientation = "vertical"
+    orientation = "horizontal"
 )
 
 # +
