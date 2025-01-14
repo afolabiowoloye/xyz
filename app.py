@@ -44,7 +44,7 @@ st.set_page_config(page_title = page_title, page_icon = page_icon, layout = layo
 #st.title("pIC50 Prediction App")
 # Logo image
 image = 'logo/logo.jpg'
-st.image(image, use_column_width=True)
+st.image(image, use_container_width=True)
 
 
 # -
