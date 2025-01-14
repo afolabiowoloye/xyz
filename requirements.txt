@@ -1,4 +1,4 @@
-rdkit
+rdkit==2024.9.1
 streamlit
 streamlit-option-menu
 pandas
