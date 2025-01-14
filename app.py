@@ -54,7 +54,7 @@ selected = option_menu(
     options = ['Home', 'EGFR', 'ER','Prog', 'aromatase', 'About'],
     icons = ["house-fill", "capsule", "heart-fill", "heart", "capsule", "envelope-fill"],
     default_index = 0,
-    orientation = "horizontal"
+    orientation = "vertical"
 )
 
 # +
