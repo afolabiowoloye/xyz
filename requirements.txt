@@ -7,6 +7,6 @@ plotly
 scikit-learn
 Pillow
 matplotlib
-numpy
+numpy==2.2.1
 
 
