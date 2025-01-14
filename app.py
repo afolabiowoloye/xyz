@@ -51,7 +51,7 @@ st.image(image, use_container_width=True)
 
 selected = option_menu(
     menu_title = page_title + " " + page_icon,
-    options = ['Home', 'EGFR', 'ER', 'HER2', 'PR', 'PI3K', 'VEGFR2', 'mTOR', 'PARP1', 'AKT', 'ATM', 'FGFR1', 'B-raf', 'HDAC-1', 'HDAC-2', 'HDAC-8',
+    options = ['Home', 'EGFR', 'ER', 'HER2', 'PR', 'PI3K', 'VEGFR2', 'mTOR', 'PARP1', 'AKT', 'ATM', 'FGFR1', 'Braf', 'HDAC1', 'HDAC2', 'HDAC8',
                'CXCR4', 'CDK2', 'AR', 'JAK2', 'GSK-3B', 'Prog', 'aromatase', 'About'],
     icons = ["house-fill", "capsule", "heart-fill", "heart", "capsule", "envelope-fill", "capsule", "capsule", "capsule", "capsule", "capsule", "envelope-fill",
              "capsule", "capsule", "capsule", "capsule", "capsule", "envelope-fill", "capsule", "capsule", "capsule", "capsule", "capsule", "capsule"],
