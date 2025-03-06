@@ -74,7 +74,7 @@ if selected == "ER":
     data_link = f'https://drive.google.com/uc?id={data_link_id}'
     data = pd.read_csv(data_link)
     st.write("Data Preview:")
-    #st.dataframe(data.head())
+    st.dataframe(data.head())
     #col = data.columns
     #st.write(col)
 
