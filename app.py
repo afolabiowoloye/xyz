@@ -68,7 +68,7 @@ if selected == "Home":
 # Display data preview
 #st.write("Data Preview:")
 #st.dataframe(df.head())
-if selected == "EGFR":
+if selected == "ER":
 # Link to the dataset on Google Drive
     data_link_id = "1C-cFzESEfJcEdWGDLLdVawQbgZvbU_rQ"
     data_link = f'https://drive.google.com/uc?id={data_link_id}'
