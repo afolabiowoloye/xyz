@@ -77,7 +77,7 @@ if selected == "Home":
     with st.sidebar.header("""Overview and Usage"""):
         st.sidebar.markdown("""
         <h4 style='color: blue;'>Brief Overview of the App</h4>
-        The <strong>Breast Cancer pIC<sub>50</sub> Predictor</strong> is a powerful tool that leverages advanced machine learning models to predict the <strong>pIC<sub>50</sub> values</strong> of compounds. The pIC50 value is a critical metric in drug discovery, representing the potency of a compound in inhibiting a specific target.<br>
+        The <strong>Breast Cancer pIC<sub>50</sub> Predictor</strong> is a powerful tool that leverages advanced <em>machine learning algorithms<?em> to predict the <strong>pIC<sub>50</sub> values</strong> of compounds. The pIC50 value is a critical metric in drug discovery, representing the potency of a compound in inhibiting a specific target.<br>
                
         <h4 style='color: blue;'>How to Use the App</h4>
         <strong>1. Select a Target:</strong> Choose one of the 20 breast cancer targets from Home page.<br>
