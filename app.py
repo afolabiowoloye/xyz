@@ -82,7 +82,10 @@ if selected == "Home":
         <h4 style='color: blue;'>How to Use the App</h4>
         <strong>1. Select a Target:</strong> Choose one of the 20 breast cancer targets from Home page.<br>
         <strong>2. Input Your Compound:</strong> Upload compounds' SMILES string file.<br>
-        [Example input file](https://raw.githubusercontent.com/afolabiowoloye/xyz/refs/heads/main/sample.csv).<br>
+        """, unsafe_allow_html=True)
+        st.markdown("""[Example input file](https://raw.githubusercontent.com/afolabiowoloye/xyz/refs/heads/main/sample.csv)""")
+
+        st.sidebar.markdown("""
         <strong>3. Get Predictions:</strong> Click <strong>Predict</strong> to receive the <sub>50</sub> value for your compound.<br>
         <strong>4. Explore Results:</strong> View detailed predictions and download the results for further analysis.<br>
               
