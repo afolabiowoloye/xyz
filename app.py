@@ -91,7 +91,7 @@ if selected == "Home":
         <strong>Accelerate Research:</strong> Streamline your drug discovery workflow and focus on the most promising leads.<br>
             
         <h4 style='color: blue;'>Get Started</h4>
-        Ready to explore? Click the "Predict" button to begin your journey toward discovering potent breast cancer inhibitors. If you have any questions or need assistance, feel free to reach out to us.
+        Ready to explore? Click your <strong>target of choice</strong> button to begin your journey toward discovering potent breast cancer inhibitors. If you have any questions or need assistance, feel free to reach out to us.
         """, unsafe_allow_html=True)
         st.markdown("""[Example input file](https://raw.githubusercontent.com/afolabiowoloye/xyz/refs/heads/main/sample.csv)""")
 
