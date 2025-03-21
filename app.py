@@ -63,7 +63,7 @@ selected = option_menu(
 if selected == "Home":
     st.markdown("""
     <h3 style='color: darkblue;'>Welcome to Breast Cancer pIC<sub>50</sub> Prediction Web App</h3>
-    We are thrilled to have you here. This app is designed to help researchers, clinicians, and scientists predict the <strong>pIC<sub>50</sub> values</strong> of compounds targeting <strong>20 different breast cancer targets</strong>. Whether you're exploring potential drug candidates or analyzing molecular interactions, this tool is here to simplify your work and accelerate your discoveries.)
+    We are thrilled to have you here. This app is designed to help researchers, clinicians, and scientists predict the <strong>pIC<sub>50</sub> values</strong> of compounds targeting <strong>20 different breast cancer targets</strong>. Whether you're exploring potential drug candidates or analyzing molecular interactions, this tool is here to simplify your work and accelerate your discoveries.
     """, unsafe_allow_html=True)
     
     st.markdown("""
