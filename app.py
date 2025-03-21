@@ -61,9 +61,10 @@ selected = option_menu(
 
 # +
 if selected == "Home":
-    st.subheader("Welcome to Breast Cancer pIC50 Prediction Web App")
+    st.markdown("""
+    <h3 style='color: green;'>Welcome to Breast Cancer pIC50 Prediction Web App</h3>
     st.write("We are thrilled to have you here. This app is designed to help researchers, clinicians, and scientists predict the **pIC50 values** of compounds targeting **20 different breast cancer targets**. Whether you're exploring potential drug candidates or analyzing molecular interactions, this tool is here to simplify your work and accelerate your discoveries.")
-    
+    """, unsafe_allow_html=True)
     
 # Display data preview
 #st.write("Data Preview:")
