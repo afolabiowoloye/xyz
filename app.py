@@ -144,10 +144,10 @@ if selected == "ER":
     rmse = np.sqrt(mse)
     r2 = r2_score(y_test, y_pred)
 
-    st.write(f'R-squared (R2) Score: {r2:.2f}')
-    st.write(f'Mean Absolute Error: {mae:.2f}')
-    st.write(f'Mean Squared Error: {mse:.2f}')
-    st.write(f'Root Mean Squared Error: {rmse:.2f}')
+    #st.write(f'R-squared (R2) Score: {r2:.2f}')
+    #st.write(f'Mean Absolute Error: {mae:.2f}')
+    #st.write(f'Mean Squared Error: {mse:.2f}')
+    #st.write(f'Root Mean Squared Error: {rmse:.2f}')
 
 
     # Plotting
