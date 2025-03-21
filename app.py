@@ -62,7 +62,7 @@ selected = option_menu(
 # +
 if selected == "Home":
     st.subheader("Welcome to Breast Cancer pIC50 Prediction Web App")
-    st.write("This application is designed to assist researchers and healthcare professionals in predicting the half-maximal inhibitory concentration (IC50) values for various compounds in the treatment of breast cancer. Understanding IC50 values is crucial for evaluating the effectiveness of therapeutic agents and optimizing treatment strategies")
+    st.write("We are thrilled to have you here. This app is designed to help researchers, clinicians, and scientists predict the **pIC50 values** of compounds targeting **20 different breast cancer targets**. Whether you're exploring potential drug candidates or analyzing molecular interactions, this tool is here to simplify your work and accelerate your discoveries.")
     
     
 # Display data preview
