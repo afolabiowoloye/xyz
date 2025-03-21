@@ -31,7 +31,7 @@ from streamlit_option_menu import option_menu # for setting up menu bar
 
 # +
 #-----------Web page setting-------------------#
-page_title = "💊Breast Cancer pIC<sub>50</sub> Prediction Web App"
+page_title = "💊Breast Cancer pIC50 Prediction Web App"
 page_icon = "🎗🧬⌬"
 viz_icon = "📊"
 stock_icon = "📋"
@@ -63,11 +63,12 @@ selected = option_menu(
 if selected == "Home":
     st.markdown("""
     <h3 style='color: green;'>Welcome to Breast Cancer pIC<sub>50</sub> Prediction Web App</h3>
-    We are thrilled to have you here. This app is designed to help researchers, clinicians, and scientists predict the <strong>pIC50 values</strong> of compounds targeting <strong>20 different breast cancer targets</strong>. Whether you're exploring potential drug candidates or analyzing molecular interactions, this tool is here to simplify your work and accelerate your discoveries.)
+    We are thrilled to have you here. This app is designed to help researchers, clinicians, and scientists predict the <strong>pIC<sub>50</sub> values</strong> of compounds targeting <strong>20 different breast cancer targets</strong>. Whether you're exploring potential drug candidates or analyzing molecular interactions, this tool is here to simplify your work and accelerate your discoveries.)
     """, unsafe_allow_html=True)
+    
     st.markdown("""
     <h4 style='color: blue;'>Key Features</h4>
-    <strong>20 Breast Cancer Targets:</strong> Predict pIC50 values for compounds targeting a wide range of breast cancer-related proteins, including kinases, receptors, and enzymes.<br>
+    <strong>20 Breast Cancer Targets:</strong> Predict pIC<sub>50</sub> values for compounds targeting a wide range of breast cancer-related proteins, including kinases, receptors, and enzymes.<br>
     <strong>User-Friendly Interface:</strong> Simply input your compound's details (e.g., SMILES string or molecular structure), and the app will generate predictions instantly.<br>
     <strong>Reliable Predictions:</strong> Built on robust machine learning models trained on high-quality datasets, the app delivers reliable and actionable insights.<br>
     <strong>Research-Ready:</strong> Designed to support drug discovery and molecular research, helping you identify promising compounds and optimize drug candidates.<br>
@@ -76,13 +77,13 @@ if selected == "Home":
     with st.sidebar.header("""Overview and Usage"""):
         st.sidebar.markdown("""
         <h4 style='color: blue;'>Brief Overview of the App</h4>
-        The <strong>Breast Cancer pIC50 Predictor</strong> is a powerful tool that leverages advanced machine learning models to predict the **pIC50 values** of compounds. The pIC50 value is a critical metric in drug discovery, representing the potency of a compound in inhibiting a specific target.<br>
+        The <strong>Breast Cancer pIC50 Predictor</strong> is a powerful tool that leverages advanced machine learning models to predict the <strong>pIC<sub>50</sub> values</strong> of compounds. The pIC50 value is a critical metric in drug discovery, representing the potency of a compound in inhibiting a specific target.<br>
                
         <h4 style='color: blue;'>How to Use the App</h4>
         <strong>1. Select a Target:</strong> Choose one of the 20 breast cancer targets from Home page.<br>
         <strong>2. Input Your Compound:</strong> Upload compounds' SMILES string file. See [Example input file](https://raw.githubusercontent.com/afolabiowoloye/xyz/refs/heads/main/sample.csv).<br>
-        <strong>3. Get Predictions:</strong> Click <strong>Predict</strong> to receive the pIC50 value for your compound.<br>
-        <strong>4. View detailed predictions and download the results for further analysis.<br>
+        <strong>3. Get Predictions:</strong> Click <strong>Predict</strong> to receive the <sub>50</sub> value for your compound.<br>
+        <strong>4. Explore Results:</strong> View detailed predictions and download the results for further analysis.<br>
               
         <h4 style='color: blue;'>Why Use This App?</h4>
         <strong>Save Time:</strong> Quickly screen compounds and prioritize the most potent candidates.<br>
