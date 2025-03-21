@@ -82,10 +82,6 @@ if selected == "Home":
         <h4 style='color: blue;'>How to Use the App</h4>
         <strong>1. Select a Target:</strong> Choose one of the 20 breast cancer targets from Home page.<br>
         <strong>2. Input Your Compound:</strong> Upload compounds' SMILES string file.<br>
-        """, unsafe_allow_html=True)
-        st.markdown("""[Example input file](https://raw.githubusercontent.com/afolabiowoloye/xyz/refs/heads/main/sample.csv)""")
-
-        st.sidebar.markdown("""
         <strong>3. Get Predictions:</strong> Click <strong>Predict</strong> to receive the <sub>50</sub> value for your compound.<br>
         <strong>4. Explore Results:</strong> View detailed predictions and download the results for further analysis.<br>
               
@@ -97,6 +93,7 @@ if selected == "Home":
         <h4 style='color: blue;'>Get Started</h4>
         Ready to explore? Click the "Predict" button to begin your journey toward discovering potent breast cancer inhibitors. If you have any questions or need assistance, feel free to reach out to us.
         """, unsafe_allow_html=True)
+        st.markdown("""[Example input file](https://raw.githubusercontent.com/afolabiowoloye/xyz/refs/heads/main/sample.csv)""")
 
 
      
