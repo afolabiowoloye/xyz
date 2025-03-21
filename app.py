@@ -69,11 +69,12 @@ if selected == "Home":
     st.markdown("""
     <h4 style='color: blue;'>Key Features</h4>
     <strong>...</strong>
+    """, unsafe_allow_html=True)
+
     #<strong>20 Breast Cancer Targets:</strong> Predict pIC<sub>50</sub> values for compounds targeting a wide range of breast cancer-related proteins, including kinases, receptors, and enzymes.<br>
     #<strong>User-Friendly Interface:</strong> Simply input your compound's details (e.g., SMILES string or molecular structure), and the app will generate predictions instantly.<br>
     #<strong>Reliable Predictions:</strong> Built on robust machine learning models trained on high-quality datasets, the app delivers reliable and actionable insights.<br>
     #<strong>Research-Ready:</strong> Designed to support drug discovery and molecular research, helping you identify promising compounds and optimize drug candidates.<br>
-    """, unsafe_allow_html=True)
     
     image2 = 'logo/workflow.png'
     st.image(image2, use_container_width=True)
