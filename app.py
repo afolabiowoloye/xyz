@@ -31,7 +31,7 @@ from streamlit_option_menu import option_menu # for setting up menu bar
 
 # +
 #-----------Web page setting-------------------#
-page_title = "💊Breast Cancer pIC50 Prediction Web App"
+page_title = "💊Breast Cancer pIC<sub>50</sub Prediction Web App"
 page_icon = "🎗🧬⌬"
 viz_icon = "📊"
 stock_icon = "📋"
