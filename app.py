@@ -253,7 +253,7 @@ if selected == "Braf":
 
     # Plotting
     fig, ax = plt.subplots()
-    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'blue'}, line_kws={'color':'red'}, ax=ax)
+    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'green'}, line_kws={'color':'red'}, ax=ax)
     ax.set_xlabel('Experimental pIC50')
     ax.set_ylabel('Predicted pIC50')
     ax.set_xlim(3.5, 10.5)
@@ -349,7 +349,7 @@ if selected == "CDK2":
 
     # Plotting
     fig, ax = plt.subplots()
-    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'blue'}, line_kws={'color':'red'}, ax=ax)
+    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'red'}, line_kws={'color':'blue'}, ax=ax)
     ax.set_xlabel('Experimental pIC50')
     ax.set_ylabel('Predicted pIC50')
     ax.set_xlim(2.5, 10)
@@ -448,7 +448,7 @@ if selected == "Aromatase":
 
     # Plotting
     fig, ax = plt.subplots()
-    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'blue'}, line_kws={'color':'red'}, ax=ax)
+    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'purple'}, line_kws={'color':'red'}, ax=ax)
     ax.set_xlabel('Experimental pIC50')
     ax.set_ylabel('Predicted pIC50')
     ax.set_xlim(3.5, 10.5)
