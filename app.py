@@ -352,8 +352,8 @@ if selected == "CDK2":
     sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'blue'}, line_kws={'color':'red'}, ax=ax)
     ax.set_xlabel('Experimental pIC50')
     ax.set_ylabel('Predicted pIC50')
-    ax.set_xlim(3.5, 10.5)
-    ax.set_ylim(3.5, 10.5)
+    ax.set_xlim(2.5, 10)
+    ax.set_ylim(3, 10)
     plt.title('Actual vs Predicted pIC50')
     st.pyplot(fig)
 
