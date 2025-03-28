@@ -253,7 +253,7 @@ if selected == "Braf":
 
     # Plotting
     fig, ax = plt.subplots()
-    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'indigo'}, line_kws={'color':'orange'}, ax=ax)
+    sns.regplot(x=y_test, y=y_pred, scatter_kws={'alpha': 0.3, 'color': 'indigo'}, line_kws={'color':'crimson'}, ax=ax)
     ax.set_xlabel('Experimental pIC50')
     ax.set_ylabel('Predicted pIC50')
     ax.set_xlim(3.5, 10.5)
