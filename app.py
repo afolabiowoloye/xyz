@@ -196,6 +196,7 @@ if selected == "ER":
         sample['predicted_pIC50'] = model.predict(df_ligands_descriptors_scaled)
         st.write("Predicted pIC50 Values:")
         st.dataframe(sample[['name', 'SMILES', 'predicted_pIC50']])
+        st.write(sample)
         download_result = pd.DataFrame(sample)
         download_result = download_result.to_csv(index=False)
         st.download_button("Press to Download Result",download_result,"file.csv","text/csv",key='download-csv')
