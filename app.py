@@ -425,7 +425,11 @@ if selected == "Aromatase":
     X_test_scaled = scaler.transform(X_test)
     
     # Model training
-    model = CatBoostRegressor()
+    model = ExtraTreesRegressor(max_depth = 40,
+                            min_samples_leaf = 1,
+                            min_samples_split = 10,
+                            n_estimators = 200,
+                            random_state=42)
     model.fit(X_train_scaled, y_train)
 
     # Predictions
