@@ -432,6 +432,13 @@ if selected == "Aromatase":
                             random_state=42)
     model.fit(X_train_scaled, y_train)
 
+
+###########################################    
+    #model_link_id = "10b80C6hmgSC0jBtLFtUX2lFa2ioHLM07"
+    #model_link = f'https://drive.google.com/uc?id={data_link_id}'
+    #model = 
+
+
     # Predictions
     y_pred = model.predict(X_test_scaled)
 
