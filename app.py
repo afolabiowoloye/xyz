@@ -438,7 +438,11 @@ if selected == "Aromatase":
 ###########################################    
     model_link_id = "1W-19f1wRweVDcvVQG1gxhHc2Fp-h2z8t"
     model_link = f'https://drive.google.com/uc?id={model_link_id}'
-    model = joblib.load(model_link)
+    with open(model_link, 'rb') as file:
+        model = pickle.load(file)
+
+    
+    #model = joblib.load(model_link)
 
 
     # Predictions
