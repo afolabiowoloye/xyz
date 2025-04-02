@@ -436,7 +436,7 @@ if selected == "Aromatase":
 
 
 ###########################################    
-    model_link_id = "10b80C6hmgSC0jBtLFtUX2lFa2ioHLM07"
+    model_link_id = "1W-19f1wRweVDcvVQG1gxhHc2Fp-h2z8t"
     model_link = f'https://drive.google.com/uc?id={model_link_id}'
     model = joblib.load(model_link)
 
