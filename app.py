@@ -19,6 +19,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import ExtraTreesRegressor
+from catboost import CatBoostRegressor
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler, Normalizer, MaxAbsScaler
@@ -424,11 +425,7 @@ if selected == "Aromatase":
     X_test_scaled = scaler.transform(X_test)
     
     # Model training
-    model = ExtraTreesRegressor(max_depth = 40,
-                            min_samples_leaf = 1,
-                            min_samples_split = 10,
-                            n_estimators = 200,
-                            random_state=42)
+    model = CatBoostRegressor(iterations=1000, learning_rate=0.1, depth=6, verbose=100)
     model.fit(X_train_scaled, y_train)
 
     # Predictions
