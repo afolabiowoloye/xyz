@@ -425,7 +425,7 @@ if selected == "Aromatase":
     X_test_scaled = scaler.transform(X_test)
     
     # Model training
-    model = CatBoostRegressor(iterations=1000, learning_rate=0.1, depth=6, verbose=100)
+    model = CatBoostRegressor()
     model.fit(X_train_scaled, y_train)
 
     # Predictions
