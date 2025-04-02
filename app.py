@@ -16,6 +16,8 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import numpy as np
+import pickle
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import ExtraTreesRegressor
@@ -434,9 +436,9 @@ if selected == "Aromatase":
 
 
 ###########################################    
-    #model_link_id = "10b80C6hmgSC0jBtLFtUX2lFa2ioHLM07"
-    #model_link = f'https://drive.google.com/uc?id={data_link_id}'
-    #model = 
+    model_link_id = "10b80C6hmgSC0jBtLFtUX2lFa2ioHLM07"
+    model_link = f'https://drive.google.com/uc?id={model_link_id}'
+    model = joblib.load(model_link)
 
 
     # Predictions
