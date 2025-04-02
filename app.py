@@ -109,7 +109,7 @@ if selected == "Home":
 if selected == "ER":
 # Link to the dataset on Google Drive
     data_link_id = "1C-cFzESEfJcEdWGDLLdVawQbgZvbU_rQ"
-    #data_link = f'https://drive.google.com/uc?id={data_link_id}'
+    data_link = f'https://drive.google.com/uc?id={data_link_id}'
     data = pd.read_csv(data_link)
     st.write("Data Preview:")
     st.dataframe(data.head())
