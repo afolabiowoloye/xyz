@@ -110,6 +110,8 @@ if selected == "Home":
 # Display data preview
 #st.write("Data Preview:")
 #st.dataframe(df.head())
+
+@st.cache_resource(show_spinner=False)
 if selected == "Select Target":
     st.subheader("Select preferred target")
     selected_target = st.selectbox(picker_icon, targets)
