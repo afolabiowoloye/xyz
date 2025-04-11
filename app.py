@@ -117,7 +117,7 @@ if selected == "Select Target":
     # ER Dataset Training
     if selected_target == "Click to select a target":
         st.markdown("""
-        <h4 style='color: red;'<strong>Note:</strong>>pIC<sub>50</sub> is the negative log of the IC<sub>50</sub> value, offering a logarithmic measure of compound potency</h4>
+        <h6 style='color: red;'<strong>Note:</strong>pIC<sub>50</sub> is the negative log of the IC<sub>50</sub> value, offering a logarithmic measure of compound potency</h6>
         """, unsafe_allow_html=True)
         
     if selected_target == "ER":
