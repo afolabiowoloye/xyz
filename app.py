@@ -61,7 +61,7 @@ selected = option_menu(
     orientation = "horizontal"
 )
 
-targets = ['Aromatase', 'CDK2', 'Braf', 'PI3K', 'VEGFR2', 'mTOR', 'PARP1', 'AKT', 'ATM', 'FGFR1', 'PR', 'HDAC1', 'HDAC2', 'HDAC8', 'CXCR4', 'HER2', 'AR', 'JAK2', 'GSK3B']
+targets = ['ER', 'Aromatase', 'CDK2', 'Braf', 'PI3K', 'VEGFR2', 'mTOR', 'PARP1', 'AKT', 'ATM', 'FGFR1', 'PR', 'HDAC1', 'HDAC2', 'HDAC8', 'CXCR4', 'HER2', 'AR', 'JAK2', 'GSK3B']
 
 
 # +
