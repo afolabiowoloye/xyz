@@ -112,7 +112,7 @@ if selected == "Home":
 #st.dataframe(df.head())
 if selected == "Select Target":
     st.subheader("Select preferred target")
-    selected_target = st.selectbox("Pick a target " + picker_icon, targets)
+    selected_target = st.selectbox(picker_icon, targets)
 
     # ER Dataset Training
     if selected_target == "Click to select a target":
