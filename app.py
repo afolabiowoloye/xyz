@@ -61,7 +61,7 @@ selected = option_menu(
     orientation = "horizontal"
 )
 
-targets = ['ER', 'Aromatase', 'CDK2', 'Braf', 'PI3K', 'VEGFR2', 'mTOR', 'PARP1', 'AKT', 'ATM', 'FGFR1', 'PR', 'HDAC1', 'HDAC2', 'HDAC8', 'CXCR4', 'HER2', 'AR', 'JAK2', 'GSK3B']
+targets = ['Click to select a target', 'ER', 'Aromatase', 'CDK2', 'Braf', 'PI3K', 'VEGFR2', 'mTOR', 'PARP1', 'AKT', 'ATM', 'FGFR1', 'PR', 'HDAC1', 'HDAC2', 'HDAC8', 'CXCR4', 'HER2', 'AR', 'JAK2', 'GSK3B']
 
 
 # +
@@ -115,6 +115,8 @@ if selected == "Select Target":
     selected_target = st.selectbox("<strong>Pick a target</strong> " + picker_icon, targets)
 
     # ER Dataset Training
+    if selected_target == "Click to select a target":
+        
     if selected_target == "ER":
         data_link_id = "1C-cFzESEfJcEdWGDLLdVawQbgZvbU_rQ"
         data_link = f'https://drive.google.com/uc?id={data_link_id}'
