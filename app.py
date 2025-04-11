@@ -111,7 +111,6 @@ if selected == "Home":
 #st.write("Data Preview:")
 #st.dataframe(df.head())
 
-@st.cache_data
 if selected == "Select Target":
     st.subheader("Select preferred target")
     selected_target = st.selectbox(picker_icon, targets)
