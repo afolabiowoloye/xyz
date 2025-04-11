@@ -112,11 +112,14 @@ if selected == "Home":
 #st.dataframe(df.head())
 if selected == "Select Target":
     st.subheader("Select preferred target")
-    selected_target = st.selectbox("<strong>Pick a target</strong> " + picker_icon, targets)
+    selected_target = st.selectbox("Pick a target " + picker_icon, targets)
 
     # ER Dataset Training
     if selected_target == "Click to select a target":
-        2+2
+        st.markdown("""
+        <h4 style='color: blue;'>Select any breast cancer of choice to predict pIC<sub>50</sub> value</h4>
+        <strong>Note</strong> pIC<sub>50</sub> is the negative log of the IC50 value, offering a logarithmic measure of compound potency
+        """, unsafe_allow_html=True)
         
     if selected_target == "ER":
         data_link_id = "1C-cFzESEfJcEdWGDLLdVawQbgZvbU_rQ"
